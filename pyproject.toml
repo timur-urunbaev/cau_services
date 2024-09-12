@@ -3,7 +3,7 @@ requires = ["setuptools", "setuptools-scm"]
 build-backend = "setuptools.build_meta"
 
 [project]
-name = "cau"
+name = "cau_services"
 version = "0.0.2"
 authors = [
     {name = "Timur Urunbaev", email = "urunbaev.timur@gmail.com"}
