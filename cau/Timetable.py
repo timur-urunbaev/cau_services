@@ -121,3 +121,11 @@ class Timetable():
             week[i] = data[data['days'] == day].to_dict(orient='records')
         
         return week
+
+    def get_groups(self):
+        self.parse_to_df()
+        groups = dict()
+        for _class in self.df_classes[['id', 'name']].to_dict(orient="records"):
+            groups[_class['name']] = _class['id']
+
+        return groups
