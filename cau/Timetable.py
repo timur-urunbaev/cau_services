@@ -12,9 +12,9 @@ class Timetable():
         url (str): The URL of the JSON file to download.
     """
 
-    def __init__(self):
+    def __init__(self, num):
         self.url = "https://cau.edupage.org/timetable/server/regulartt.js?__func=regularttGetData"
-        self.payload = {"__args":["null","36"],"__gsh":"00000000"}
+        self.payload = {"__args":["null",f"{num}"],"__gsh":"00000000"}
 
     def download(self):
         """
